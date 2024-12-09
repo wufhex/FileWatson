@@ -38,8 +38,6 @@ FileWatson allows you to perform precise searches using the search bar on the to
   To find files containing a specific keyword (e.g., "homework"), use the following:  
   `C:/path/to/folder/homework`  
 
----
-
 ## **Download**
 
 You can check the releases tab for unstable releases, these are the latest stable versions:
@@ -50,40 +48,32 @@ You can check the releases tab for unstable releases, these are the latest stabl
 - **Quickly Locate Files**: Search for files using extensions, keywords.
 - **Optimized Speed**: Designed for minimal delay, ensuring results appear almost instantly.
 
----
-
 ### 🖥️ **Cross-Platform Compatibility**
 - **Runs Anywhere**: Supports major operating systems, allowing seamless functionality on Windows, macOS, and Linux.
-
----
 
 ### 🏎️ **Core Allocation**
 - **Multi-Core Utilization**: Assign as many cores as you like for faster searches. 
 
----
-
 ### 📋 **Table Sorting**
 - **Clickable Columns**: Click on any column header in the results table to sort the files alphabetically by that column.
 - **Toggle Sorting**: Clicking the same header again reverses the sorting order.
-
----
 
 ### 🖱️ **Interactive File Actions**
 - **Open Files Directly**: Double-click a result to open the file in your default file manager.
 - **Copy File Paths**: Select a file row and press `CTRL+C` to copy its path instantly.
 - **Zoom UI**: Adjust the UI scale by pressing `CTRL+SCROLL` for a better view.
 
----
-
 ### 🌍 **Custom Language Support**
 - **Localization Ready**: Create and use custom language files to translate the program into your preferred language.
 - **Easy Implementation**: Simply write a new JSON language file, and FileWatson will adapt.
 
 # Build Instructions
+⚠️ Tested on:
+ - Windows 11 x64
+ - Linux Mint 22 Cinnamon (Kernel 6.8.0-38-generic)
+ - Debian WSL (Kernel 5.15.167.4-1)
 
 Follow the steps below to build the FileWatson project on your platform.
-
----
 
 ## Prerequisites
 - **CMake**
@@ -91,8 +81,6 @@ Follow the steps below to build the FileWatson project on your platform.
 - **wxWidgets** (Install and ensure `wx-config` is available on non-Windows platforms)
 - **nlohmann_json** (Ensure it's installed or available via your package manager)
 - **DBus** (Required only on Linux)
-
----
 
 ## Windows
 1. Clone the project
@@ -125,15 +113,16 @@ Follow the steps below to build the FileWatson project on your platform.
 
 ## Linux
 
-1. Install required packages:
+1. Install required packages with your package manager:
    - On Ubuntu/Debian:
      ```bash
      sudo apt update
      sudo apt install cmake g++ libwxgtk3.2-dev nlohmann-json3-dev libdbus-1-dev
      ```
-   - On Fedora:
+   - On Arch:
      ```bash
-     sudo dnf install cmake g++ wxGTK3-devel nlohmann-json-devel dbus-devel
+     sudo pacman -Syu
+     sudo pacman -S cmake g++ wxwidgets-gtk3 nlohmann-json dbus
      ```
 
 2. Build the project:
