@@ -1,0 +1,5 @@
+.vs/
+winbuild/
+linuxbuild/
+macbuild/
+**/.DS_Store
