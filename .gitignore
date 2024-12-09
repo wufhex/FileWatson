@@ -2,4 +2,5 @@
 winbuild/
 linuxbuild/
 macbuild/
+post/
 **/.DS_Store

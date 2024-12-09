@@ -40,7 +40,7 @@ FileWatson allows you to perform precise searches using the search bar on the to
 
 ## **Download**
 
-You can check the releases tab for unstable releases, these are the latest stable versions:
+You can check the releases page.
 
 ## **Features**
 
@@ -137,7 +137,7 @@ Follow the steps below to build the FileWatson project on your platform.
 FileWatson supports custom language files, allowing users to translate the program into their desired language. Here’s a simple guide to creating and modifying these files.
 
 ### **Structure of a Language File**
-Language files are JSON files that define the text displayed in the program. These files are located in the `lang/` folder on Windows and Linux and in `Resources/lang/` on macOS in the application package.
+Language files are JSON files that define the text displayed in the program. These files are located in the `lang/` folder on Windows and Linux and in `Resources/lang/` on macOS in the app bundle.
 
 Each entry consists of a key and a value:
 - **Key**: Represents the internal identifier used by the program (should not be changed).
